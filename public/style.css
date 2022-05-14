@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.elh1{
+    background-color: rgb(72, 73, 42);
+}
+
+.elh2{
+    background-color: rgb(151, 45, 45);
+}
