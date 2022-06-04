@@ -10,9 +10,27 @@
 // })
 
 const express = require('express')
+const bodyParser = require('body-parser')
 const app = express()
 
+app.use(bodyParser.urlencoded({ extended: false}))
+app.use(bodyParser.json())
+
 const port = process.env.PORT || 4000;
+
+//debajo del puerto la conexion a la base de datos
+const mongoose = require('mongoose');
+
+const user = "PortafolioNew"
+const password = "rTmpj6rUluNfWrPT"
+const dbName = "Portafolio"
+const uri = `mongodb+srv://${user}:${password}@confesionario.o3ccc.mongodb.net/${dbName}?retryWrites=true&w=majority`
+
+mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true})
+
+.then(() => {console.log("se conecto")})
+.catch(e =>  console.log(e))
+
 
 //El motor de plantillas EJS
 app.set('view engine', 'ejs');
@@ -21,13 +39,10 @@ app.set('views', __dirname + '/views')
 
 app.use(express.static(__dirname + '/public'))
 
-app.get('/', (req, res) => {
-    res.render("index", {titulo: "El titulo de inicio"})
-})
+//RutasWeb lo que accede a las rutas, tipo react este es el router
+app.use("/", require('./router/RutasWeb'))
+app.use("/Confesiones", require('./router/Confesiones'))
 
-app.get('/Servicio', (req, res) => {
-    res.render("servicio", {Title: 'Esta es la pagina del servicio v.2'})
-})
 
 app.use((req, res, next) => {
     res.status(404).render("404", 
@@ -38,3 +53,5 @@ app.use((req, res, next) => {
 app.listen(port, () => {
     console.log('Respuesta del servidor');
 })
+
+
