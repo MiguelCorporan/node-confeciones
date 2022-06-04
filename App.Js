@@ -1,13 +1,4 @@
-// const http = require('http')
-// const server = http.createServer((req, res) => {
-//     res.end("Rspondiendo solicitud v.3")
-// })
-
-// const puerto = 4000;
-
-// server.listen(puerto, () => {
-//     console.log('escuchando solicitud..');
-// })
+require('dotenv').config()
 
 const express = require('express')
 const bodyParser = require('body-parser')
@@ -17,6 +8,8 @@ app.use(bodyParser.urlencoded({ extended: false}))
 app.use(bodyParser.json())
 
 const port = process.env.PORT || 4000;
+
+console.log(process.env.PORT);
 
 //debajo del puerto la conexion a la base de datos
 const mongoose = require('mongoose');
