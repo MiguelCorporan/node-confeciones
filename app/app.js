@@ -27,7 +27,7 @@ mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true})
 
 //El motor de plantillas EJS
 app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views')
+app.set('views', __dirname + './views')
 //----------------------------
 
 app.use(express.static(__dirname + '/public'))
