@@ -1,646 +1,717 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* html{
     background-color: aqua;
 } */
-body{
-    background-color: #fdb4bf;
-    min-height: 100vh;
-}
+body {
+  /* background-color: #fdb4bf; */
+  background-image: linear-gradient(
+    to top,
+    #ffffff,
+    #d2ceee,
+    #a3a0dd,
+    #6e74cc,
+    #204cbb
+  );
 
-/* .Todos{
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 
+.Todos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 } */
 
-
-header{
-    width: 100%;
-    height: 4rem;
-    border-bottom: 2px solid rgb(0, 0, 0);
+header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
 }
 
 header nav {
-    width: 70%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav a {
-    font-size: 1rem;
-    text-decoration: none;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Cinzel", serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Merienda", cursive;
+  font-family: "Mukta", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Questrial", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Solway", serif;
 }
 
-.elh1{
-    background-color: rgb(65, 145, 148);
+.elh1 {
+  background-color: rgb(65, 145, 148);
 }
 
-.elh2{
-    background-color: rgb(151, 45, 45);
+.elh2 {
+  background-color: rgb(151, 45, 45);
 }
 
-.lola{
-    text-align: center;
-    margin-bottom: 1rem;
+.lola {
+  width: 35rem;
+  /* text-align: center; */
+  margin-bottom: 1rem;
+  font-family: "Solway", serif;
+  color: #fff;
 }
 
-.con{
-    background-color: rgb(212, 255, 127);
-    margin-bottom: 1rem;
+.con {
+  background-color: rgb(212, 255, 127);
+  margin-bottom: 1rem;
 }
 
-footer{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    margin-top: 4rem;
-    text-align: center;
+footer {
+  width: 100%;
+  /*  position: absolute;
+  bottom: 0; */
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-
-main{
-    width: 80%;
-    height: 50%;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+main {
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  /*   background-color: blue; */
 }
 
-main .ja{
-    width: 50%;
-    height: 80%;
- 
+.ja h1 {
+  color: #ffffff;
+  margin-bottom: 0.7rem;
+  /* font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Cinzel", serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Merienda", cursive;
+  font-family: "Mukta", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Questrial", sans-serif;
+  font-family: "Rubik", sans-serif; */
+  font-family: "Solway", serif;
 }
 
-
-main .ji{
-    width: 50%;
-    height: 80%;
-
+.ja p {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
 }
 
+.ja a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: rgb(119, 158, 255);
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.ja a:hover {
+  background-color: #fff;
+  border-bottom: 2px solid rgb(119, 158, 255);
+  color: rgb(119, 158, 255);
+}
+
+*/ main .ji {
+  padding-bottom: 5rem;
+}
 
 /*----SERVICIOS SECCION-----*/
 
-
-.Confa{
-    width: 70%;
-    height: 60%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f693a2e6;
-    
+.Confa {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
 }
 
-.El1{
-    width: 20%;
-    height: 100%;
+.El1 {
+  width: 20%;
+  height: 100%;
 }
 
-.El2{
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
+.El2 {
+  width: 50%;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.El2 h2{
-    margin-bottom: 10px;
+.El2 h2 {
+  margin-bottom: 10px;
 }
 
-.El2 h3{
-    margin-bottom: 10px;
+.El2 h3 {
+  margin-bottom: 16px;
 }
 
-.uni{
-    margin-bottom: 20px;
+.uni {
+  margin-bottom: 20px;
 }
 
-.El3{
-    width:20%;
-    height: 100;
-
+.El3 {
+  width: 20%;
+  height: 100;
 }
 
-.du{
-    padding-left: 3rem;
-    padding-right: 3rem;
+.du {
+  padding-right: 3rem;
 }
 
-.img{
-    width: 100%;
-    height: 100%;
+.img {
+  width: 100%;
+  height: 100%;
 }
 
-.aver{
-    color: black;
+.aver {
+  color: black;
 }
-
-
-
-
-
-
-
-
-
 
 /*--SECCIONES/// FORMULARIO DE CREACION/// EN CREAR.EJS--------------------*/
 
-
-.ElT{
-    width: 30%;
-    height: 68%;
-    background-color: #fdb4bf;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10px;
+.ElT {
+  width: 30%;
+  height: 68%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
 }
 
-.ElT h2{
-    height: 2rem;
-    width: 100%;
-    text-align: center;
-    color: rgb(0, 0, 0);
+.ElT h2 {
+  height: 2rem;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Solway", serif;
 }
 
-.Form1{
-    width: 80%;
-    height: 90%;
-    padding: 30px;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    background-color: #ffffff;
+.Form1 {
+  width: 80%;
+  height: 90%;
+  padding: 30px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: #07172557;
 }
 
-.Form1 input{
-    width: 100%;
-    background-color: transparent;
-    margin-bottom: 13px;
-    border: 1px solid black;
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    outline: none;
-    padding-left: 8px;
+.Form1 input {
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 13px;
+  border: none;
+  caret-color: #ffffff;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+
+  outline: none;
+  padding-left: 8px;
 }
 
-.Form1 textarea{
-    width: 100%;
-    background-color: transparent;
-    margin-bottom: 13px;
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    outline: none;
-    padding-left: 8px;
+.Form1 textarea {
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 13px;
+  color: rgb(255, 255, 255);
+  outline: none;
+  padding-left: 8px;
+  border: none;
+  resize: none;
+  border-bottom: 2px solid black;
 }
 
-.Form1 div{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    margin-left: 1rem;
+/* .Form1 div {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-left: 1rem;
+} */
+
+.Form1 .w-6 {
+  width: 1.3rem;
 }
 
-.Form1 div svg{
-    width: 100%;
-    height: 100%;
+.Form1 p {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
 }
 
-.Form1 p{
-    margin-left: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.T1Input{
-    width: 100%; 
+.T1Input {
+  width: 100%;
   height: 1.8rem;
 }
 
-.NameInput{
-    width: 80%;
+.NameInput {
+  width: 80%;
   height: 1.8rem;
 }
 
-.ConfiInput{
-    width: 100%;
+.ConfiInput {
+  width: 100%;
   height: 6rem;
-  
 }
 
-.PassInput{
-    width: 70%;
-    height: 1.8rem;
+.PassInput {
+  width: 70%;
+  height: 1.8rem;
 }
 
-.BtCrea{
-    width: 20%;
-    border-radius: 10px;
-    margin-left: 40%;
-    margin-right: 50%;
+.BtCrea {
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: rgb(119, 158, 255);
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
+.BtCrea:hover {
+  background-color: #fff;
+  border-bottom: 2px solid rgb(119, 158, 255);
+  color: rgb(119, 158, 255);
+}
 
 /*---ESTILOS DE LAS TARJERAS EN CONFESIONES.EJS-*/
 
-.AllCards{
-    width: 100%;
-    overflow: auto;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.AllCards {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
   /*  grid-template-rows:4rem auto ; */
 }
 
-.AllCards .Allcah{
-    width: 100%;
-    height: 2rem;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 1rem;
-    
+.AllCards .Allcah {
+  width: 100%;
+  height: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Solway", serif;
+  color: #fff;
 }
 
-.Cards{
-    width: 250px;
-    height: 17rem;
-    border-radius: 10px;
-    background-color: azure;
-    position: relative;
-    margin-top: 3%;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
+.w-6 {
+  color: #ffffff;
 }
 
-.Titulo{
- width: 95%;
- height: 20%;
- margin-left: auto;
- margin-right: auto;
- text-align: center;
+.Allcah h2 {
+  color: #fff;
+  font-family: "Solway", serif;
 }
 
-.Elhr{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
+.Cards {
+  width: 250px;
+  height: 19rem;
+  border-radius: 10px;
+  background-color: #07172557;
+  position: relative;
+  margin-top: 3%;
+  border: 2px solid rgb(84, 79, 79);
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
 }
 
-.Contenido{
-width:90%;
-height: 55%;
-overflow: auto;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 2%;
-border: 1px solid black;
-border-radius: 5px;
-padding-left: 3px;
-
+.Titulo {
+  width: 95%;
+  height: 20%;
+  margin: 0.3rem auto;
+  text-align: center;
 }
 
-.Contenido::-webkit-scrollbar{
-        width: 7px;
-        background-color: #dddd;
-        border-radius: 5px;
+.Elhr {
+  width: 80%;
+  margin: 0.2rem auto;
+
+  background-color: black;
 }
 
-.Contenido::-webkit-scrollbar-thumb{
-    background-color: #333;
-    border-radius: 10px;
+.Contenido {
+  width: 90%;
+  height: 55%;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 3px;
 }
 
-
-.Funciones{
-    width: 90%;
-    height: 12%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
-
+.Contenido::-webkit-scrollbar {
+  width: 7px;
+  background-color: #dddd;
+  border-radius: 5px;
 }
 
-.Funciones div{
-    width: 50%;
-    height: 100%;
+.Contenido::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 10px;
 }
 
-.Edit{
-    text-align: center;
-    
+.Funciones {
+  width: 90%;
+  height: 12%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
 }
 
-.Edit svg{
-    width: 90%;
-    height: 80%;
+.Funciones div {
+  width: 50%;
+  height: 100%;
 }
 
-.Edit button{
-    width: 40%;
-    height: 100%;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding-top: 2px;
-    cursor: pointer;
+.Edit {
+  text-align: center;
 }
 
-.Delete{
-    text-align: center;
-   
+.Edit svg {
+  width: 90%;
+  height: 80%;
 }
 
-.Delete svg{
-    width: 90%;
-    height: 80%;
+.Edit button {
+  width: 40%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-top: 2px;
+  cursor: pointer;
+  color: #fff;
 }
 
-.Delete button{
-    width: 40%;
-    height: 100%;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding-top: 2px;
-    cursor: pointer;
+.Delete {
+  text-align: center;
 }
 
-.Fecha{
-    width: 80%;
-    height: 10%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5px;
+.Delete svg {
+  width: 90%;
+  height: 80%;
+}
+
+.button {
+  width: 40%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-top: 2px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+}
+
+.Fecha {
+  width: 80%;
+  height: 10%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
 }
 
 /*-////CODIGOS DE LA VENTANA MODAL//// CODIGO EN CONFESIONES.EJS DEBAJO DEL FORM-*/
 
-
-
-.modal{
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(49, 49, 49, 0.384);
-    opacity: 0;
-    pointer-events: none;
-    transform: all 1s;
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(49, 49, 49, 0.384);
+  opacity: 0;
+  pointer-events: none;
+  transform: all 1s;
 }
 
-.modal-conten{
-    position: relative;
+.modal-conten {
+  position: relative;
 }
 
-.modal-close{
-    position: absolute;
-    right: 1rem;
+.modal-close {
+  position: absolute;
+  right: 1rem;
 }
 
-.modal-close svg{
-    width: 2.5rem;
-    height: 3rem;
-    color: #fdb4bf;
-    fill: rgb(0, 0, 0);
+.modal-close svg {
+  width: 2.5rem;
+  height: 3rem;
+  color: #fdb4bf;
+  fill: rgb(0, 0, 0);
 }
 
-.Seve{
-    opacity: 1;
-    pointer-events: auto;
+.Seve {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.elforn{
-    width: 35rem;
-    height: 15rem;
-    background-color: rgba(255, 255, 255);
-    border-radius: 10px;
+.elforn {
+  width: 35rem;
+  height: 15rem;
+  background-color: rgba(49, 49, 49, 0.712);
+  border-radius: 10px;
 }
 
-.fornH{
-    width: 70%;
-    height: 2.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.2rem;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-bottom: 2rem;
+.fornH {
+  width: 70%;
+  height: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Solway", serif;
 }
 
-.elforn form{
-    width: 50%;
-    height: 20%;
-    margin-left: auto;
-    margin-right: auto;
+.elforn form {
+  width: 50%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.elforn input{
-    width: 100%;
-    height: 2rem;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    padding-left: 10px;
+.elforn input {
+  width: 100%;
+  height: 2rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
 
-.elforn button{
-    margin-left: 40%;
+.elforn button {
+  margin-left: 40%;
+
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: rgb(119, 158, 255);
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
 /*--Formulario de edicion-------------------*/
 
-.aEditar{
-    width: 50%;
-    height: 35rem;
-    margin-left: auto;
-    margin-right: auto;
+.aEditar {
+  width: 50%;
+  height: 35rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.h2Edi{
-    text-align: center;
+.h2Edi {
+  text-align: center;
 }
 
-.ForEdi{
-    width: 90%;
-    height: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.ForEdi {
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.ForEdi input{
-    margin-bottom: .5rem;
-    padding: .5rem 2rem;
-    border-radius: 10px;
-    border: none;
+.ForEdi input {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  border: none;
 }
 
-.imgss{
-    width: 100%;
-    height: 100%;
+.imgss {
+  width: 30rem;
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+
+.fle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*-------------MODO TABLET---------------------------------------*/
 
 @media screen and (max-width: 780px) {
+  html {
+    overflow-x: hidden;
+  }
 
-    html{
-        overflow: hidden;
-    }
+  header {
+    justify-content: space-between;
+  }
 
+  header nav {
+    width: 100%;
+  }
 
+  .AllCards .Allcah {
+    margin-bottom: 2.5rem;
+  }
 
-    
-main{
+  main {
     width: 90%;
-  
-  
-}
+  }
 
-.elforn{
+  .elforn {
     width: 23rem;
+  }
+  /*-----Parte2----*/
 
-}
-/*-----Parte2----*/
-
-.Confa{
+  .Confa {
     width: 100%;
-    
-}
+  }
 
-/*------Parte 3 tarjetas----------*/
+  /*------Parte 3 tarjetas----------*/
 
-.AllCards{
-  
-    width: 100%;
-    height: 80vh;
-    overflow: auto;
-}
+  .AllCards {
+    width: 80%;
+    min-height: 80vh;
+  }
 
-.AllCards .Allcah{
+  .AllCards .Allcah {
     width: 100%;
     height: 2rem;
     font-size: 2rem;
     text-align: center;
     margin-top: 1rem;
     grid-column: 1 / 5;
-    
-}
+  }
 
-/*----------Confesion Form-----------------------*/
-.ElT{
+  /*----------Confesion Form-----------------------*/
+  .ElT {
     width: 50%;
-  
-}
+  }
 
-.Form1{
-    width: 80%;
+  .Form1 {
+    width: 100%;
+  }
 
-}
-
-.Ocul{
+  .Ocul {
     display: none;
-}
-    
+  }
 }
 
 @media screen and (max-width: 480px) {
+  main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    html{
-        overflow: hidden;
-    }
+  main .ja {
+    width: 100%;
+  }
 
-    main{
-        width: 100%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  main .ji {
+    width: 100%;
+  }
 
-    main .ja{
-        width: 100%;
-    }
+  main a {
+    text-decoration: none;
+  }
 
-    main .ji{
-        width: 100%;
-    }
+  header nav {
+    width: 100%;
+  }
 
-    main a {
-        text-decoration: none;
-    }
-    
-    header nav {
-        width: 98%;  
-    }
+  header nav {
+    width: 98%;
+  }
 
-    .elforn{
-        width: 23rem;
+  .elforn {
+    width: 23rem;
+  }
 
-    }
-    
-    /*-------------------------------*/
+  /*-------------------------------*/
 
-    .El1{
-        display: none;
-    }
+  .El1 {
+    display: none;
+  }
 
-    .El2{
-        width: 100%;
-     
-    }
+  .El2 {
+    width: 100%;
+  }
 
-    .El3{
-        display: none;
-    }
+  .El3 {
+    display: none;
+  }
 
-    .aver{
-        display: none;
-    }
+  .aver {
+    display: none;
+  }
 
-    .Ocul{
-        display: none;
-    }
+  .Ocul {
+    display: none;
+  }
 
-    /*------Confesion form------------*/
-    .ElT{
-        width: 90%;
-      
-    }
-
+  /*------Confesion form------------*/
+  .ElT {
+    width: 90%;
+  }
 }
